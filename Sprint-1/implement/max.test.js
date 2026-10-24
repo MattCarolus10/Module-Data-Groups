@@ -32,6 +32,12 @@ test("returns the closest to zero for all negatives", () => {
     expect(findMax([-9, -2, -6])).toBe(-2);
 });
 
+test("returns the largest decimal number", () => {
+    expect(findMax([1.2, 3.8, 2.6])).toBe(3.8);
+});
+
+
+
 // Given an array with one number
 // When passed to the max function
 // Then it should return that number
