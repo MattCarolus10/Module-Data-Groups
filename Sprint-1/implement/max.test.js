@@ -40,6 +40,10 @@ test("throws for an array containing a non-number", () => {
     expect(() => findMax(["hey", 10])).toThrow(new Error("findMax requires an array of numbers"));
 });
 
+test("throws when not given an array", () => {
+    expect(() => findMax("hey")).toThrow(new Error("findMax requires an array of numbers"));
+});
+
 
 
 
