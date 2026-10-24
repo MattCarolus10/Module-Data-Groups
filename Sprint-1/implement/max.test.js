@@ -20,6 +20,12 @@ test("given an empty array, returns -Infinity", () => {
     expect(findMax([])).toBe(-infinity);
 });
 
+test("given an array with one number, returns that number", () => {
+    expect(findMax([7])).toBe(7);
+});
+
+
+
 // Given an array with one number
 // When passed to the max function
 // Then it should return that number
