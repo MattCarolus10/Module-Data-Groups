@@ -6,6 +6,9 @@
 // or contains values that aren't numbers (the function is expected to throw - see the tests).
 
 function calculateMedian(list) {
+  if (!Array.isArray(list)) {
+    throw new Error("calculateMedian requires an array of numbers");
+  };
   const middleIndex = Math.floor(list.length / 2);
   const median = list.splice(middleIndex, 1)[0];
   return median;
