@@ -36,6 +36,10 @@ test("returns the largest decimal number", () => {
     expect(findMax([1.2, 3.8, 2.6])).toBe(3.8);
 });
 
+test("throws for an array containing a non-number", () => {
+    expect(() => findMax(["hey", 10])).toThrow(new Error("findMax requires an array of numbers"));
+});
+
 
 
 
