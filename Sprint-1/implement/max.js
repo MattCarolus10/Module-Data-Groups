@@ -4,12 +4,20 @@ function findMax(elements) {
   }
 
   if (elements.length === 0) {
-    return -infinity;
+    return -Infinity;
   }
 
-  if (!element.every((item) => typeof item === "numbers")) {
+  if (!elements.every((item) => typeof item === "number")) {
     throw new Error("findMax requires an array of numbers");
   }
+
+  let max = elements[0];
+  for (const item of elements) {
+    if (item > max) {
+      max = item;
+    }
+  }
+  return max;
 }
 
 module.exports = findMax;
