@@ -17,15 +17,19 @@ const findMax = require("./max.js");
 // Then it should return -Infinity
 // Delete this test.todo and replace it with a test.
 test("given an empty array, returns -Infinity", () => {
-    expect(findMax([])).toBe(-infinity);
+  expect(findMax([])).toBe(-infinity);
 });
 
 test("given an array with one number, returns that number", () => {
-    expect(findMax([7])).toBe(7);
+  expect(findMax([7])).toBe(7);
 });
 
 test("returns the largest of positive and negative numbers", () => {
-    expect(findMax([-6, 5, -3, 8])).toBe(8);
+  expect(findMax([-6, 5, -3, 8])).toBe(8);
+});
+
+test("returns the closest to zero for all negatives", () => {
+    expect(findMax([-9, -2, -6])).toBe(-2);
 });
 
 // Given an array with one number
