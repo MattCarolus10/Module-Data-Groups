@@ -1,3 +1,5 @@
+const findMax = require("./max.js");
+
 test("given an empty array, returns -Infinity", () => {
   expect(findMax([])).toBe(-Infinity);
 });
