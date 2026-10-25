@@ -35,7 +35,11 @@ test("handles negative and decimal numbers", () => {
   expects(calculateMean([-2, 4, 3.5])).toBeCloseTo(1.8333);
 });
 
-test
+test("throws for an empty array", () => {
+  expect(() => calculateMean([])).toThrow(
+    new Error("calculateMean requires a non-empty array")
+  );
+});
 // Given an array with a single number
 // When passed to calculateMean
 // Then it should return that number
