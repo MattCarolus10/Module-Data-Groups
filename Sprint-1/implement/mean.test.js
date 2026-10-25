@@ -24,8 +24,8 @@ test("throws when not given an array", () => {
   );
 });
 
-test("throws for an array containing. a non-number", () => {
+test("throws for an array containing a non-number", () => {
   expect(() => calculateMean([1, "2", 3])).toThrow(
-    new Error("calculateMean requires a array of numbers")
+    new Error("calculateMean requires an array of numbers")
   );
 });
