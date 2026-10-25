@@ -5,6 +5,11 @@ function sum(elements) {
   if (!list.every((item) => typeof item === "number")) {
     throw new Error("sum requires an array of numbers");
   }
+  let total = 0;
+  for(const item of list) {
+    total += item;
+  }
+  return total
 }
 
 module.exports = sum;
