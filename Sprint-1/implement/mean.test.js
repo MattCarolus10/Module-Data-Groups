@@ -31,6 +31,11 @@ test("returns the number for a single item array", () => {
   expect(calculateMean([8])).toBe(8);
 });
 
+test("handles negative and decimal numbers", () => {
+  expects(calculateMean([-2, 4, 3.5])).toBeCloseTo(1.8333);
+});
+
+test
 // Given an array with a single number
 // When passed to calculateMean
 // Then it should return that number
