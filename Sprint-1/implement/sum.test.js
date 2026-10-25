@@ -33,6 +33,10 @@ test("throws for an array containing a non-number", () => {
     expect(() => sum(["hey", 10])).toThrow("sum requires an array of numbers");
 });
 
+test("throws when not given an array", () =>{
+    expect(() => sum("hey")).toThrow(new Error("sum requires an array of numbers"));
+});
+
 // Given an array with just one number
 // When passed to the sum function
 // Then it should return that number
