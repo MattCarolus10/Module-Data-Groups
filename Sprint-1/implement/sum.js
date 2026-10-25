@@ -1,4 +1,4 @@
-function sum(elements) {
+function sum(list) {
   if (!Array.isArray(list)) {
     throw new Error("sum requires an array of numbers");
   }
