@@ -9,7 +9,7 @@ test("returns the number for a single item array", () => {
 });
 
 test("handles negative and decimal numbers", () => {
-  expects(calculateMean([-2, 4, 3.5])).toBeCloseTo(1.8333);
+  expect(calculateMean([-2, 4, 3.5])).toBeCloseTo(1.8333);
 });
 
 test("throws for an empty array", () => {
