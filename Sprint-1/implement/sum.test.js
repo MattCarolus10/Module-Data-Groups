@@ -18,15 +18,15 @@ test("given an empty array, returns 0", () => {
 });
 
 test("given an array with one number, return that number", () => {
-  expect(sun[8]).toBe(8);
+  expect(sum([8])).toBe(8);
 });
 
 test("adds negative number correctly", () => {
-  expect(sum[(-5, 3, -10)]).toBe(12);
+  expect(sum([-5, 3, -10])).toBe(-12);
 });
 
 test("adds decimal numbers correctly", () => {
-  expect(sum[(1.5, 2.25, 3)]).toBe(6.75);
+  expect(sum([1.5, 2.25, 3])).toBe(6.75);
 });
 
 test("throws for an array containing a non-number", () => {
