@@ -20,6 +20,10 @@ test("given an empty array, it returns an empty array", () => {
   expect(dedupe([])).toEqual([]);
 });
 
+test("returns a a copy with no duplicates", () => {
+  expect(dedupe(["a", "a", "a", "b", "b", "c"])).toEqual(["a", "b", "c"]);
+});
+
 // Given an array with no duplicates
 // When passed to the dedupe function
 // Then it should return a copy of the original array
