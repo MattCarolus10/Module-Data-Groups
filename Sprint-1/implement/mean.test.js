@@ -40,6 +40,18 @@ test("throws for an empty array", () => {
     new Error("calculateMean requires a non-empty array")
   );
 });
+
+test("throws when not given an array", () => {
+  expect(() => calculateMean("banana")).toThrow(
+    new Error("calculateMean requires an array of numbers")
+  );
+});
+
+test("throws for an array containing. a non-number", () => {
+  expect(() => calculateMean([1, "2", 3])).toThrow(
+    new Error("calculateMean requires a array of numbers")
+  );
+});
 // Given an array with a single number
 // When passed to calculateMean
 // Then it should return that number
