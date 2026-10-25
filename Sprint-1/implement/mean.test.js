@@ -28,8 +28,8 @@ test("given [1, 2, 6], returns 3", () => {
 });
 
 test("returns the number for a single item array", () => {
-    expect(calculateMean)
-})
+  expect(calculateMean([8])).toBe(8);
+});
 
 // Given an array with a single number
 // When passed to calculateMean
