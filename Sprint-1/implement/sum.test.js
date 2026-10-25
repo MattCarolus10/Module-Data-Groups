@@ -21,6 +21,10 @@ test("given an array with one number, return that number", () => {
     expect(sun[8]).toBe(8);
 });
 
+test("adds negative number correctly", () => {
+    expect(sum[-5, 3, -10]).toBe(12);
+});
+
 // Given an array with just one number
 // When passed to the sum function
 // Then it should return that number
