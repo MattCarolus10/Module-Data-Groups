@@ -28,7 +28,6 @@ test("keeps the first occurrence order", () => {
   expect(dedupe([5, 1, 1, 2, 3, 2, 5, 8])).toEqual([5, 1, 2, 3, 8]);
 });
 
-
 // Given an array with no duplicates
 // When passed to the dedupe function
 // Then it should return a copy of the original array
