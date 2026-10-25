@@ -17,6 +17,9 @@ test("given an empty array, returns 0", () => {
     expect(sum[]).toBe(0);
 });
 
+test("given an array with one number, return that number", () => {
+    expect(sun[8]).toBe(8);
+});
 
 // Given an array with just one number
 // When passed to the sum function
