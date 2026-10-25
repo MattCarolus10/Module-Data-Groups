@@ -25,6 +25,14 @@ test("adds negative number correctly", () => {
     expect(sum[-5, 3, -10]).toBe(12);
 });
 
+test("adds decimal numbers correctly", () => {
+    expect(sum[1.5, 2.25, 3]).toBe(6.75);
+});
+
+test("throws for an array containing a non-number", () => {
+    expect(() => sum(["hey", 10])).toThrow("sum requires an array of numbers");
+});
+
 // Given an array with just one number
 // When passed to the sum function
 // Then it should return that number
