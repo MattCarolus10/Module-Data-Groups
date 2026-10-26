@@ -25,6 +25,13 @@ test('given [1, 2, 3], returns "The median is 2"', () => {
   expect(describeMedian([1, 2, 3])).toBe("Tne median is 2");
 });
 
+test("returns a sentence for an empty array", () => {
+  expect(describeMedian([])).toBe(
+    "Could not calculate median: calculateMedian requires a non-empty array"
+  );
+});
+
+
 
 
 // Given an empty array
