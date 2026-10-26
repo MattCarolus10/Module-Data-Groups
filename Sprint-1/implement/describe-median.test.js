@@ -27,13 +27,13 @@ test('given [1, 2, 3], returns "The median is 2"', () => {
 
 test("returns a sentence for an empty array", () => {
   expect(describeMedian([])).toBe(
-    "Could not calculate median: calculateMedian requires a non-empty array"
+    "Could not calculate a median: calculateMedian requires a non-empty array"
   );
 });
 
 test("return a sentence for a non-array", () => {
   expect(describeMedian("banana")).toBe(
-    "Could not calculate median: calculateMedian requires an array of numbers"
+    "Could not calculate a median: calculateMedian requires an array of numbers"
   );
 });
 
