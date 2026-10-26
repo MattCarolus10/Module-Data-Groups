@@ -31,8 +31,11 @@ test("returns a sentence for an empty array", () => {
   );
 });
 
-
-
+test("return a sentence for a non-array", () => {
+  expect(describeMedian("banana")).toBe(
+    "Could not calculate median: calculateMedian requires an array of numbers"
+  );
+});
 
 // Given an empty array
 // When passed to describeMedian
