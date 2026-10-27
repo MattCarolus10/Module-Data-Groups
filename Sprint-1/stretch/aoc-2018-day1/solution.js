@@ -1,12 +1,16 @@
 const fs = require("fs");
-const lines = fs.readFileSync("input.txt", "utf8").split("\n");
+const changes = fs.readFileSync("input.txt", "utf8").trim().split("\n").map(Number);
 
 let frequency = 0;
 
-for (const line of lines) {
-  if (line !== "") {
-    frequency += Number(line);
-  }
-}
-console.log(frequency);
+const seen = new Set([0]);
 
+for (i = 0; ;i++) {
+    frequency += changes[i % changes.length];
+  
+  if (seen.has(frequency)) {
+    console.log(frequency);
+    break;
+}
+    seen.add(frequency)
+}
